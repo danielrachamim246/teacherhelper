@@ -13,6 +13,13 @@ def log(msg):
 		print msg
 	return
 
+def handle_mgmt_server():
+	# Listens of 8003
+	# Handles requests 
+	# TODO how to share commands between the clients server and the mgmt server
+	log('I\'m the mgmt server!')
+	return
+
 def listen(port=8002):
 	"""
 	Listening on socket and returns the socket
@@ -83,6 +90,7 @@ def main():
 
 	# Creates an handler to the snaps server
 	threading.Thread(target=handle_snaps_server).start()
+	threading.Thread(target=handle_mgmt_server).start()
 
 	while True:
 		client, addr = s.accept()

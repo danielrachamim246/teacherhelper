@@ -19,6 +19,7 @@ def log(msg):
 
 
 def lockscreen_handler():
+	# TODO think of a way to lock the user until other command
 	ctypes.windll.user32.LockWorkStation()
 	return
 
@@ -63,6 +64,7 @@ def main():
 	while True:
 		s.send("KeepAlive!")
 		log('sleeping')
+		# TODO maybe dynamic way to consider sleeping time
 		time.sleep(5)
 		req = s.recv(1024)
 		print 'Do request: ' + req
