@@ -47,9 +47,77 @@ def handle_teacher(s=None):
 			s.send(teacher_put_cmd(cmd, 'snap'))
 			continue
 
+		elif cmd.startswith('getLiveStreamClient'):
+			s.send(teacher_put_cmd(cmd, 'snap'))
+			continue
+
 		else:
 			s.send('InvalidCommand')
 			continue
+
+
+def get_folder_path_live_stream(userid, image_timestamp):
+	image_date = image_timestamp.split('T')[0]
+	image_hour = image_timestamp.split('T')[1].split(":")[0]
+	image_minute = image_timestamp.split('T')[1].split(":")[1]
+	folder_path = os.path.join(IMAGE_SAVE_PATH, userid, image_date, image_hour, image_minute)
+	return folder_path
+
+def get_stream_send(s=None):
+	# TODO Start from the max file number and not from zero
+	snapid = 0
+	image_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
+	folder_path = get_folder_path_live_stream(0, image_timestamp)
+	while True:
+		filename = os.path.join(folder_path, "{0}.jpg".format(snapid))
+		if not os.path.exists(filename):
+			image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
+			if image_timestamp == image_new_timestamp:
+				continue
+			snapid = 0
+
+		f = open(save_path, 'rb')
+		while True:
+			log('Reading from snap')
+			raw_data = f.read(50000000)
+			if not raw_data:
+				log('breaking')
+				break
+			encoded_data = base64.b64encode(raw_data)
+			msg = "{0}".format(len(encoded_data))
+			s.send(msg)
+			time.sleep(0.1)
+			s.send(encoded_data)
+			#time.sleep(0.1)
+			log('Sent snap')
+		f.close()
+
+
+def handle_get_stream(s=None):
+	if s is None:
+		return
+	while True:
+		userid = int(s.recv(300))
+		log('GET_STREAM | Handler | userid={0}'.format(userid))
+		if userid != 0:
+			log('ERROR: Client requested another user than the teacher')
+			return
+		get_stream_send(s)
+		
+
+def handle_get_stream_server():
+	# Listens of 8004
+	# Sends photos of the teacher (userid=0), the latest (live)
+	
+	s = listen(port=8004)
+	while True:
+		r_sock, addr = s.accept()
+		log('GET_STREAM | New Connection')
+		# We've received a connection
+		th = threading.Thread(target=handle_teacher, args=(teacher_sock,))
+		th.start()
+
+	return
 
 
 
@@ -57,9 +125,7 @@ def handle_mgmt_server():
 	# Listens of 8003
 	# Handles requests 
 	# TODO how to share commands between the clients server and the mgmt server
-	"""
 	
-	"""
 	s = listen(port=8003)
 	while True:
 		teacher_sock, addr = s.accept()
@@ -160,7 +226,7 @@ def handle_client(client_sock, addr, userid):
 
 		
 
-
+# TODO Server should clear snapshot history for other days
 def main():
 	"""
 	Main function
