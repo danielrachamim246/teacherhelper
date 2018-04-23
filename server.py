@@ -7,7 +7,7 @@ import Queue
 MAX_CLIENTS=5
 mydict = {}
 IMAGE_SAVE_PATH = "C:\\Users\\user\\snapshots"
-DEBUG = 1
+DEBUG = 0
 
 def log(msg):
 	if DEBUG:
@@ -87,14 +87,16 @@ def handle_snaps_server():
 	client, addr = s.accept()
 	log('SNAP | Accepted Connection')
 	# TODO: multi threading support
+	
 	while True:
 		log('Waiting for data')
-		data = client.recv(3000000)
+		data = client.recv(300000)
 		log('Got data')
 		if not data:
 			log('breaking')
 			break
-		#print data
+
+		print data[0:50]
 		arr_data = data.split(',')
 
 		#msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, encoded_data)
@@ -103,19 +105,31 @@ def handle_snaps_server():
 		image_hour = arr_data[2]
 		image_minute = arr_data[3]
 		snapid = arr_data[4]
+		encoded_len = int(arr_data[5])
 
 		folder_path = os.path.join(IMAGE_SAVE_PATH, userid, image_date, image_hour, image_minute)
 		try:
-			os.mkdirs(folder_path)
+			os.makedirs(folder_path)
 		except OSError:
 			# Folder exists
-			continue
+			pass
 
 		log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
-		raw_data = ','.join(arr_data[5:])
+		log('Expecting {0} bytes of data'.format(encoded_len))
+		got_encoded = ""
+		while len(got_encoded) != encoded_len:
+			data = client.recv(300000)
+			log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
+			if not data:
+				log('breaking encoded')
+				break
+			got_encoded += data
+			log("now we have {0} from {1}".format(len(got_encoded), encoded_len))
+
 		fname = "{0}.jpg".format(snapid)
+		log("writing file {0}".format(fname))
 		f = open(os.path.join(folder_path, fname), 'ab')
-		f.write(base64.b64decode(raw_data))
+		f.write(base64.b64decode(got_encoded))
 		f.close()
 
 
