@@ -7,7 +7,7 @@ import Queue
 MAX_CLIENTS=5
 mydict = {}
 IMAGE_SAVE_PATH = "C:\\Users\\user\\snapshots"
-DEBUG = 0
+DEBUG = 1
 
 def log(msg):
 	if DEBUG:
@@ -37,7 +37,13 @@ def handle_teacher(s=None):
 		log('MGMT | Teacher | received {0}'.format(cmd))
 		if cmd == 'getClient':
 			# return a string with all the clients, seperated by ","
-			s.send(",".join(str(item) for item in mydict.keys()))
+			clientList = ",".join(str(item) for item in mydict.keys())
+			print clientList
+			if clientList == "":
+				s.send("None")
+			else:
+				s.send(clientList)
+			continue
 
 		elif cmd.startswith('lockClient'):
 			s.send(teacher_put_cmd(cmd, 'lockscreen'))
@@ -208,7 +214,9 @@ def handle_client(client_sock, addr, userid):
 		try:
 			req = client_sock.recv(9999999)
 		except Exception:
-			continue
+			del mydict[userid]
+			log("client {0} disconnected!".format(userid))
+			return
 
 		log('[*] Client {0}:{1} requests {2}'.format(addr[0], addr[1], req))
 		# Get a job and send

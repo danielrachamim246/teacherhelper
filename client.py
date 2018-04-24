@@ -12,7 +12,7 @@ import datetime
 
 global userid
 
-DEBUG = 0
+DEBUG = 1
 
 def log(msg):
 	if DEBUG:
