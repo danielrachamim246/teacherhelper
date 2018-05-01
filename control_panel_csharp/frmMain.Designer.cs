@@ -54,6 +54,7 @@
             this.listClient.FormattingEnabled = true;
             this.listClient.Location = new System.Drawing.Point(34, 78);
             this.listClient.Name = "listClient";
+            this.listClient.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.listClient.Size = new System.Drawing.Size(152, 264);
             this.listClient.TabIndex = 1;
             // 
@@ -65,6 +66,7 @@
             this.btnSnapStart.TabIndex = 2;
             this.btnSnapStart.Text = "Snapshot Start";
             this.btnSnapStart.UseVisualStyleBackColor = true;
+            this.btnSnapStart.Click += new System.EventHandler(this.btnSnapStart_Click);
             // 
             // btnSnapStop
             // 
@@ -74,6 +76,7 @@
             this.btnSnapStop.TabIndex = 3;
             this.btnSnapStop.Text = "Snapshot Stop";
             this.btnSnapStop.UseVisualStyleBackColor = true;
+            this.btnSnapStop.Click += new System.EventHandler(this.btnSnapStop_Click);
             // 
             // btnLock
             // 
@@ -83,6 +86,7 @@
             this.btnLock.TabIndex = 4;
             this.btnLock.Text = "lock";
             this.btnLock.UseVisualStyleBackColor = true;
+            this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
             // 
             // btnStreamLive
             // 

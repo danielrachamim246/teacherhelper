@@ -53,7 +53,13 @@ def handle_teacher(s=None):
 			s.send(teacher_put_cmd(cmd, 'snap'))
 			continue
 
+		elif cmd.startswith('requestStopStreamClient'):
+			s.send(teacher_put_cmd(cmd, 'stopsnap'))
+			continue
+
+		# Relevant for the clients themselves, to get the screen of the teacher
 		elif cmd.startswith('getLiveStreamClient'):
+			# TODO!!!!!!
 			s.send(teacher_put_cmd(cmd, 'snap'))
 			continue
 
@@ -105,9 +111,6 @@ def handle_get_stream(s=None):
 	while True:
 		userid = int(s.recv(300))
 		log('GET_STREAM | Handler | userid={0}'.format(userid))
-		if userid != 0:
-			log('ERROR: Client requested another user than the teacher')
-			return
 		get_stream_send(s)
 		
 
@@ -151,15 +154,7 @@ def listen(port=8002):
 	s.listen(MAX_CLIENTS)
 	return s
 
-def handle_snaps_server():
-	log('SNAP | Listening...')
-	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.bind(("0.0.0.0", 10000))
-	s.listen(100)
-	client, addr = s.accept()
-	log('SNAP | Accepted Connection')
-	# TODO: multi threading support
-	
+def handle_snap_server_sock(client):
 	while True:
 		log('Waiting for data')
 		data = client.recv(300000)
@@ -168,7 +163,7 @@ def handle_snaps_server():
 			log('breaking')
 			break
 
-		print data[0:50]
+		#print data[0:50]
 		arr_data = data.split(',')
 
 		#msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, encoded_data)
@@ -203,6 +198,20 @@ def handle_snaps_server():
 		f = open(os.path.join(folder_path, fname), 'ab')
 		f.write(base64.b64decode(got_encoded))
 		f.close()
+
+
+def handle_snaps_server():
+	log('SNAP | Listening...')
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.bind(("0.0.0.0", 10000))
+	s.listen(100)
+	while True:
+		log('SNAP | Waiting for Another Connection')
+		client, addr = s.accept()
+		log('SNAP | Accepted Connection')
+		threading.Thread(target=handle_snap_server_sock, args=(client,)).start()
+	
+	
 
 
 def handle_client(client_sock, addr, userid):

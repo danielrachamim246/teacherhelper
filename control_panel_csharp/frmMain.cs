@@ -100,5 +100,30 @@ namespace teacherhelper_control_panel
         {
             Application.Exit();
         }
+
+        private void btnSnapStart_Click(object sender, EventArgs e)
+        {
+            foreach (Object selecteditem in this.listClient.SelectedItems)
+            {
+                this.cp.sendCommand("requestStreamClient," + (string)selecteditem);
+            }
+                
+        }
+
+        private void btnLock_Click(object sender, EventArgs e)
+        {
+            foreach (Object selecteditem in this.listClient.SelectedItems)
+            {
+                this.cp.sendCommand("lockClient," + (string)selecteditem);
+            }
+        }
+
+        private void btnSnapStop_Click(object sender, EventArgs e)
+        {
+            foreach (Object selecteditem in this.listClient.SelectedItems)
+            {
+                this.cp.sendCommand("requestStopStreamClient," + (string)selecteditem);
+            }
+        }
     }
 }
