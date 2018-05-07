@@ -59,8 +59,8 @@ def handle_teacher(s=None):
 
 		# Relevant for the clients themselves, to get the screen of the teacher
 		elif cmd.startswith('getLiveStreamClient'):
-			# TODO!!!!!!
-			s.send(teacher_put_cmd(cmd, 'snap'))
+			stream_userid = cmd.split(',').split(';')[1]
+			s.send(teacher_put_cmd(cmd, 'stream;{0}'.format(stream_userid)))
 			continue
 
 		else:
@@ -75,11 +75,11 @@ def get_folder_path_live_stream(userid, image_timestamp):
 	folder_path = os.path.join(IMAGE_SAVE_PATH, userid, image_date, image_hour, image_minute)
 	return folder_path
 
-def get_stream_send(s=None):
+def get_stream_send(s=None, userid=0):
 	# TODO Start from the max file number and not from zero
 	snapid = 0
 	image_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
-	folder_path = get_folder_path_live_stream(0, image_timestamp)
+	folder_path = get_folder_path_live_stream(userid, image_timestamp)
 	while True:
 		filename = os.path.join(folder_path, "{0}.jpg".format(snapid))
 		if not os.path.exists(filename):
@@ -88,7 +88,7 @@ def get_stream_send(s=None):
 				continue
 			snapid = 0
 
-		f = open(save_path, 'rb')
+		f = open(filename, 'rb')
 		while True:
 			log('Reading from snap')
 			raw_data = f.read(50000000)
@@ -96,7 +96,7 @@ def get_stream_send(s=None):
 				log('breaking')
 				break
 			encoded_data = base64.b64encode(raw_data)
-			msg = "{0}".format(len(encoded_data))
+			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
 			s.send(msg)
 			time.sleep(0.1)
 			s.send(encoded_data)
@@ -111,7 +111,7 @@ def handle_get_stream(s=None):
 	while True:
 		userid = int(s.recv(300))
 		log('GET_STREAM | Handler | userid={0}'.format(userid))
-		get_stream_send(s)
+		get_stream_send(s, userid)
 		
 
 def handle_get_stream_server():
@@ -123,7 +123,7 @@ def handle_get_stream_server():
 		r_sock, addr = s.accept()
 		log('GET_STREAM | New Connection')
 		# We've received a connection
-		th = threading.Thread(target=handle_teacher, args=(teacher_sock,))
+		th = threading.Thread(target=handle_get_stream, args=(r_sock,))
 		th.start()
 
 	return
@@ -257,6 +257,7 @@ def main():
 	# Creates an handler to the snaps server
 	threading.Thread(target=handle_snaps_server).start()
 	threading.Thread(target=handle_mgmt_server).start()
+	threading.Thread(target=handle_get_stream_server).start()
 
 	while True:
 		client, addr = s.accept()

