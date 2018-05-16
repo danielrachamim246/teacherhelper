@@ -84,9 +84,10 @@ def handle_teacher(s=None):
 			continue
 
 		# Relevant for the clients themselves, to get the screen of the teacher
+		# getlive,targetuserid;streamfromid
 		elif cmd.startswith('getLiveStreamClient'):
-			stream_userid = cmd.split(',').split(';')[1]
-			s.send(teacher_put_cmd(cmd, 'stream;{0}'.format(stream_userid)))
+			stream_userid = cmd.split(',')[1].split(';')[1]
+			s.send(teacher_put_cmd(cmd.split(';')[0], 'stream;{0}'.format(stream_userid)))
 			continue
 
 		else:
@@ -98,7 +99,7 @@ def get_folder_path_live_stream(userid, image_timestamp):
 	image_date = image_timestamp.split('T')[0]
 	image_hour = image_timestamp.split('T')[1].split(":")[0]
 	image_minute = image_timestamp.split('T')[1].split(":")[1]
-	folder_path = os.path.join(IMAGE_SAVE_PATH, userid, image_date, image_hour, image_minute)
+	folder_path = os.path.join(IMAGE_SAVE_PATH, str(userid), image_date, image_hour, image_minute)
 	return folder_path
 
 def get_stream_send(s=None, userid=0):
