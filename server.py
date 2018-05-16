@@ -3,6 +3,7 @@ import threading
 import os
 import base64
 import Queue
+import datetime
 
 MAX_CLIENTS=5
 mydict = {}
@@ -17,15 +18,15 @@ def log(msg):
 def delete_history_snaps():
 	usersdir = os.listdir(IMAGE_SAVE_PATH)
 	todayobj = datetime.datetime.now()
-	delta = datetime.timedelta(days=2)
+	deltaobj = datetime.timedelta(days=2)
 	for userdir in usersdir:
 		path = "{0}\\{1}".format(IMAGE_SAVE_PATH, userdir)
 		datesdir = os.listdir(path)
 		for datedir in datesdir:
 			# For each folder
-			diryear = datedir.split('-') [0]
-			dirmonth = datedir.split('-') [1]
-			dirday = datedir.split('-') [2]
+			diryear = int(datedir.split('-') [0])
+			dirmonth = int(datedir.split('-') [1])
+			dirday = int(datedir.split('-') [2])
 			dirdateobj = datetime.datetime(diryear, dirmonth, dirday)
 
 			# Do we want to delete?
