@@ -14,6 +14,27 @@ def log(msg):
 		print msg
 	return
 
+def delete_history_snaps():
+	usersdir = os.listdir(IMAGE_SAVE_PATH)
+	todayobj = datetime.datetime.now()
+	delta = datetime.timedelta(days=2)
+	for userdir in usersdir:
+		path = "{0}\\{1}".format(IMAGE_SAVE_PATH, userdir)
+		datesdir = os.listdir(path)
+		for datedir in datesdir:
+			# For each folder
+			diryear = datedir.split('-') [0]
+			dirmonth = datedir.split('-') [1]
+			dirday = datedir.split('-') [2]
+			dirdateobj = datetime.datetime(diryear, dirmonth, dirday)
+
+			# Do we want to delete?
+			if (todayobj - dirdateobj) > deltaobj:
+				# TODO REALLY DELETE
+				delpath = "{0}\\{1}\\{2}".format(IMAGE_SAVE_PATH, userdir, datedir)
+				print 'delete! ' + delpath
+
+
 def teacher_put_cmd(teacher_cmd, client_cmd):
 	sp = teacher_cmd.split(',')
 	if len(sp) != 2:
@@ -47,6 +68,10 @@ def handle_teacher(s=None):
 
 		elif cmd.startswith('lockClient'):
 			s.send(teacher_put_cmd(cmd, 'lockscreen'))
+			continue
+
+		elif cmd.startswith('unlockClient'):
+			s.send(teacher_put_cmd(cmd, 'unlockscreen'))
 			continue
 
 		elif cmd.startswith('requestStreamClient'):
@@ -252,6 +277,7 @@ def main():
 
 	log('Welcome to the server!')
 	s = listen(8002)
+	delete_history_snaps()
 	log('[*] Listening...')
 
 	# Creates an handler to the snaps server

