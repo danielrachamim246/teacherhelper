@@ -4,6 +4,7 @@ import os
 import base64
 import Queue
 import datetime
+import time
 
 MAX_CLIENTS=5
 mydict = {}
@@ -94,27 +95,25 @@ def handle_teacher(s=None):
 			s.send('InvalidCommand')
 			continue
 
-
-def get_folder_path_live_stream(userid, image_timestamp):
-	image_date = image_timestamp.split('T')[0]
-	image_hour = image_timestamp.split('T')[1].split(":")[0]
-	image_minute = image_timestamp.split('T')[1].split(":")[1]
-	folder_path = os.path.join(IMAGE_SAVE_PATH, str(userid), image_date, image_hour, image_minute)
-	return folder_path
-
 def get_stream_send(s=None, userid=0):
 	# TODO Start from the max file number and not from zero
 	snapid = 0
 	image_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
-	folder_path = get_folder_path_live_stream(userid, image_timestamp)
+	image_date = image_timestamp.split('T')[0]
+	image_hour = image_timestamp.split('T')[1].split(":")[0]
+	image_minute = image_timestamp.split('T')[1].split(":")[1]
+	folder_path = os.path.join(IMAGE_SAVE_PATH, str(userid), image_date, image_hour, image_minute)
 	while True:
+		log("start of main loop get_stream_send")
 		filename = os.path.join(folder_path, "{0}.jpg".format(snapid))
 		if not os.path.exists(filename):
 			image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
 			if image_timestamp == image_new_timestamp:
 				continue
+				log("after continue")
 			snapid = 0
 
+		log("before file open {0}".format(filename))
 		f = open(filename, 'rb')
 		while True:
 			log('Reading from snap')
@@ -125,11 +124,22 @@ def get_stream_send(s=None, userid=0):
 			encoded_data = base64.b64encode(raw_data)
 			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
 			s.send(msg)
-			time.sleep(0.1)
+			time.sleep(0.3)
 			s.send(encoded_data)
-			#time.sleep(0.1)
+			time.sleep(0.3)
 			log('Sent snap')
+			s.recv(100)
 		f.close()
+
+		image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
+		if image_new_timestamp != image_timestamp:
+			image_timestamp = image_new_timestamp
+			image_date = image_timestamp.split('T')[0]
+			image_hour = image_timestamp.split('T')[1].split(":")[0]
+			image_minute = image_timestamp.split('T')[1].split(":")[1]
+			snapid = 0
+		else:
+			snapid += 1
 
 
 def handle_get_stream(s=None):
@@ -183,11 +193,11 @@ def listen(port=8002):
 
 def handle_snap_server_sock(client):
 	while True:
-		log('Waiting for data')
+		#log('Waiting for data')
 		data = client.recv(300000)
-		log('Got data')
+		#log('Got data')
 		if not data:
-			log('breaking')
+			#log('breaking')
 			break
 
 		#print data[0:50]
@@ -208,20 +218,20 @@ def handle_snap_server_sock(client):
 			# Folder exists
 			pass
 
-		log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
-		log('Expecting {0} bytes of data'.format(encoded_len))
+		#log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
+		#log('Expecting {0} bytes of data'.format(encoded_len))
 		got_encoded = ""
 		while len(got_encoded) != encoded_len:
 			data = client.recv(300000)
-			log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
+			#log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
 			if not data:
-				log('breaking encoded')
+				#log('breaking encoded')
 				break
 			got_encoded += data
-			log("now we have {0} from {1}".format(len(got_encoded), encoded_len))
+			#log("now we have {0} from {1}".format(len(got_encoded), encoded_len))
 
 		fname = "{0}.jpg".format(snapid)
-		log("writing file {0}".format(fname))
+		#log("writing file {0}".format(fname))
 		f = open(os.path.join(folder_path, fname), 'ab')
 		f.write(base64.b64decode(got_encoded))
 		f.close()
