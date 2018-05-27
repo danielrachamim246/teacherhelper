@@ -5,10 +5,11 @@ import base64
 import Queue
 import datetime
 import time
+import getpass
 
 MAX_CLIENTS=5
 mydict = {}
-IMAGE_SAVE_PATH = "C:\\snapshots"
+IMAGE_SAVE_PATH = "C:\\Users\\" + getpass.getuser() + "\\snapshots"
 DEBUG = 1
 
 def log(msg):
