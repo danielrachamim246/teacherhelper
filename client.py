@@ -10,6 +10,7 @@ import ctypes
 import threading
 import datetime
 import subprocess
+import getpass
 
 global userid
 
@@ -17,7 +18,8 @@ global userid
 killSnap = 0
 killLock = 0
 DEBUG = 1
-SERVER_IP = "192.168.1.103"
+SERVER_IP = "192.168.1.102"
+IMAGE_SAVE_PATH = "C:\\Users\\" + getpass.getuser() + "\\snapshots"
 
 def log(msg):
 	if DEBUG:
@@ -25,6 +27,7 @@ def log(msg):
 	return
 
 def get_stream(userid):
+        log("get stream {0}".format(userid))
 	# Connect to the stream request handler on the server
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect((SERVER_IP, 8004))
@@ -32,6 +35,8 @@ def get_stream(userid):
 	# Send the requested userid to the server
 	s.send(userid)
 
+        log("sent userid")
+        
 	while True:
 		log('Waiting for data')
 		data = s.recv(300000)
@@ -61,7 +66,7 @@ def get_stream(userid):
 		log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
 		log('Expecting {0} bytes of data'.format(encoded_len))
 		got_encoded = ""
-		while len(got_encoded) != encoded_len:
+		while len(got_encoded) < encoded_len:
 			data = s.recv(300000)
 			log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
 			if not data:
@@ -75,6 +80,7 @@ def get_stream(userid):
 		f = open(os.path.join(folder_path, fname), 'ab')
 		f.write(base64.b64decode(got_encoded))
 		f.close()
+		s.send("ok")
 	f.close()
 
 def lockscreen_handler():
@@ -107,7 +113,7 @@ def snap_handler(userid):
 			log('killSnap, breaking')
 			return
 		snapshot = ImageGrab.grab() # TODO Lower quality
-		save_path = "C:\\Users\\user\\MySnapshot_{0}.jpg".format(random.randint(0,99999))
+		save_path = "{0}\\MySnapshot_{1}.jpg".format(IMAGE_SAVE_PATH, random.randint(0,99999))
 		snapshot.save(save_path)
 		#log('got snap, snapid: ' + str(snapid))
 		# Send
@@ -178,7 +184,7 @@ def main():
 			stream_userid = req.split(';')[1]
 			threading.Thread(target=get_stream, args=(stream_userid,)).start()
 			# TODO Start the view.exe process with stream_userid
-			subprocess.call(["C:\\Windows\\teacherhelper_view.exe", string(stream_userid)])
+			subprocess.call(["C:\\Windows\\teacherhelper_view_x64.exe", stream_userid])
 		elif req == 'stopstream':
 			# TODO Stop the streaming
 			pass
