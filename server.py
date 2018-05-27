@@ -8,7 +8,7 @@ import time
 
 MAX_CLIENTS=5
 mydict = {}
-IMAGE_SAVE_PATH = "C:\\Users\\user\\snapshots"
+IMAGE_SAVE_PATH = "C:\\snapshots"
 DEBUG = 1
 
 def log(msg):
