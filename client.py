@@ -178,7 +178,7 @@ def main():
 			stream_userid = req.split(';')[1]
 			threading.Thread(target=get_stream, args=(stream_userid,)).start()
 			# TODO Start the view.exe process with stream_userid
-			subprocess.call(["C:\\Windows\\teacher_view.exe", string(stream_userid)])
+			subprocess.call(["C:\\Windows\\teacherhelper_view.exe", string(stream_userid)])
 		elif req == 'stopstream':
 			# TODO Stop the streaming
 			pass
