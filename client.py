@@ -9,6 +9,7 @@ import base64
 import ctypes
 import threading
 import datetime
+import subprocess
 
 global userid
 
@@ -175,8 +176,9 @@ def main():
 			killSnap = 1
 		elif req.startswith('stream'):
 			stream_userid = req.split(';')[1]
-			threading.Thread(target=get_stream, args=(userid,)).start()
+			threading.Thread(target=get_stream, args=(stream_userid,)).start()
 			# TODO Start the view.exe process with stream_userid
+			subprocess.call(["C:\\Windows\\teacher_view.exe", string(stream_userid)])
 		elif req == 'stopstream':
 			# TODO Stop the streaming
 			pass
