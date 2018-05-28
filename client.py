@@ -27,7 +27,8 @@ def log(msg):
 	return
 
 def get_stream(userid):
-        log("get stream {0}".format(userid))
+	global killStream
+	log("get stream {0}".format(userid))
 	# Connect to the stream request handler on the server
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect((SERVER_IP, 8004))
@@ -35,9 +36,12 @@ def get_stream(userid):
 	# Send the requested userid to the server
 	s.send(userid)
 
-        log("sent userid")
-        
+	log("sent userid")
+		
 	while True:
+		if killStream:
+			log('killStream, breaking')
+			return
 		log('Waiting for data')
 		data = s.recv(300000)
 		s.send("okheader")
@@ -156,6 +160,7 @@ def snap_handler(userid):
 def main():
 	global killLock
 	global killSnap
+	global killStream
 	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	s.connect((SERVER_IP, 8002))
 	log('connected')
@@ -181,6 +186,11 @@ def main():
 			killLock = 1
 		elif req == 'stopsnap':
 			killSnap = 1
+		elif req == 'stopstream':
+			killStream = 1
+			os.system("taskkill /f /im teacherhelper_view.exe")
+			os.system("taskkill /f /im teacherhelper_view_x64.exe")
+
 		elif req.startswith('stream'):
 			stream_userid = req.split(';')[1]
 			threading.Thread(target=get_stream, args=(stream_userid,)).start()

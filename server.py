@@ -97,6 +97,10 @@ def handle_teacher(s=None):
 			s.send(teacher_put_cmd(cmd.split(';')[0], 'stream;{0}'.format(stream_userid)))
 			continue
 
+		elif cmd.startswith('stopLiveStreamClient'):
+			s.send(teacher_put_cmd(cmd, 'stopstream'))
+			continue
+
 		else:
 			s.send('InvalidCommand')
 			continue
