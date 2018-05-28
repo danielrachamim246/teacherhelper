@@ -15,6 +15,9 @@ DEBUG = 1
 def log(msg):
 	if DEBUG:
 		print msg
+		flog = open('server.log', 'a')
+		flog.write("{0}\n".format(msg))
+		flog.close()
 	return
 
 def delete_history_snaps():
@@ -112,12 +115,19 @@ def get_stream_send(s=None, userid=0):
 		if not os.path.exists(filename):
 			image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
 			if image_timestamp == image_new_timestamp:
+				log("start main continue, {0}".format(filename))
 				continue
 				#log("after continue")
 			snapid = 0
 
-		#log("before file open {0}".format(filename))
-		f = open(filename, 'rb')
+		log("before file open {0}".format(filename))
+		while True:
+			try:
+				f = open(filename, 'rb')
+				break
+			except Exception:
+				log("cannot open file {0}".format(filename))
+				continue
 		while True:
 			#log('Reading from snap')
 			raw_data = f.read(50000000)
@@ -128,9 +138,11 @@ def get_stream_send(s=None, userid=0):
 			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
 			s.send(msg)
 			s.recv(100)
+			log("sent header, with ack")
 			s.send(encoded_data)
 			#log('Sent snap')
 			s.recv(100)
+			log("sent data, with ack")
 		f.close()
 
 		image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
@@ -139,6 +151,7 @@ def get_stream_send(s=None, userid=0):
 			image_date = image_timestamp.split('T')[0]
 			image_hour = image_timestamp.split('T')[1].split(":")[0]
 			image_minute = image_timestamp.split('T')[1].split(":")[1]
+			folder_path = os.path.join(IMAGE_SAVE_PATH, str(userid), image_date, image_hour, image_minute)
 			snapid = 0
 		else:
 			snapid += 1
@@ -197,7 +210,7 @@ def handle_snap_server_sock(client):
 	while True:
 		#log('Waiting for data')
 		data = client.recv(300000)
-		s.send("okheader")
+		client.send("okheader")
 		#log('Got data')
 		if not data:
 			#log('breaking')
@@ -221,14 +234,14 @@ def handle_snap_server_sock(client):
 			# Folder exists
 			pass
 
-		#log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
-		#log('Expecting {0} bytes of data'.format(encoded_len))
+		log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
+		log('Expecting {0} bytes of data'.format(encoded_len))
 		got_encoded = ""
 		while len(got_encoded) != encoded_len:
 			data = client.recv(300000)
-			#log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
+			log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
 			if not data:
-				#log('breaking encoded')
+				log('breaking encoded')
 				break
 			got_encoded += data
 			#log("now we have {0} from {1}".format(len(got_encoded), encoded_len))
@@ -238,7 +251,7 @@ def handle_snap_server_sock(client):
 		f = open(os.path.join(folder_path, fname), 'ab')
 		f.write(base64.b64decode(got_encoded))
 		f.close()
-		s.send("okfile")
+		client.send("okfile")
 
 
 def handle_snaps_server():

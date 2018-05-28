@@ -41,7 +41,7 @@ def snap_handler(userid):
 		snapshot = ImageGrab.grab() # TODO Lower quality
 		save_path = "C:\\Users\\" + getpass.getuser() + "\\snapshots\\temp\\MySnapshot_{0}.jpg".format(random.randint(0,99999))
 		snapshot.save(save_path)
-		#log('got snap, snapid: ' + str(snapid))
+		log('got snap, snapid: ' + str(snapid))
 		# Send
 		f = open(save_path, 'rb')
 
@@ -54,9 +54,9 @@ def snap_handler(userid):
 			encoded_data = base64.b64encode(raw_data)
 			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
 			s.send(msg)
-			time.sleep(0.1)
+			s.recv(100)
 			s.send(encoded_data)
-			#time.sleep(0.1)
+			s.recv(100)
 			#log('Sent snap')
 
 		# finish, remove the file
@@ -66,6 +66,7 @@ def snap_handler(userid):
 		# Check for new variables for the next file
 		image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
 		if image_new_timestamp != image_timestamp:
+			log("changed time")
 			image_timestamp = image_new_timestamp
 			image_date = image_timestamp.split('T')[0]
 			image_hour = image_timestamp.split('T')[1].split(":")[0]
