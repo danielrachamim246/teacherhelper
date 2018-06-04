@@ -26,6 +26,12 @@ def log(msg):
 		print msg
 	return
 
+def setup_folders():
+	# Checks if any required folder does not exist
+	os.makedirs(IMAGE_SAVE_PATH, exist_ok=True)
+	os.makedirs(IMAGE_SAVE_PATH + "\\temp", exist_ok=True)
+
+
 def get_stream(userid):
 	global killStream
 	log("get stream {0}".format(userid))
@@ -161,46 +167,52 @@ def main():
 	global killLock
 	global killSnap
 	global killStream
-	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	s.connect((SERVER_IP, 8002))
-	log('connected')
+	setup_folders()
 	userid = random.randint(1,10001)
-	snap_thread = -1
 	log('userid ' + str(userid))
-	s.send(str(userid))
-	s.recv(1024)
-	log('before while')
 	while True:
-		s.send("KeepAlive!")
-		log('sleeping')
-		# TODO maybe dynamic way to consider sleeping time
-		time.sleep(5)
-		req = s.recv(1024)
-		log('Do request: ' + req)
-		if req == 'snap':
-			killSnap = 0
-			threading.Thread(target=snap_handler, args=(userid,)).start()
-		elif req == 'lockscreen':
-			threading.Thread(target=lockscreen_handler).start()
-		elif req == 'unlockscreen':
-			killLock = 1
-		elif req == 'stopsnap':
-			killSnap = 1
-		elif req == 'stopstream':
-			killStream = 1
-			os.system("taskkill /f /im teacherhelper_view.exe")
-			os.system("taskkill /f /im teacherhelper_view_x64.exe")
+		try:
+			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+			s.connect((SERVER_IP, 8002))
+			log('connected')
+			s.send(str(userid))
+			s.recv(1024)
+			log('before while')
+			while True:
+				s.send("KeepAlive!")
+				log('sleeping')
+				# TODO maybe dynamic way to consider sleeping time
+				time.sleep(5)
+				req = s.recv(1024)
+				log('Do request: ' + req)
+				if req == 'snap':
+					killSnap = 0
+					threading.Thread(target=snap_handler, args=(userid,)).start()
+				elif req == 'lockscreen':
+					threading.Thread(target=lockscreen_handler).start()
+				elif req == 'unlockscreen':
+					killLock = 1
+				elif req == 'stopsnap':
+					killSnap = 1
+				elif req == 'stopstream':
+					killStream = 1
+					os.system("taskkill /f /im teacherhelper_view.exe")
+					os.system("taskkill /f /im teacherhelper_view_x64.exe")
 
-		elif req.startswith('stream'):
-			stream_userid = req.split(';')[1]
-			threading.Thread(target=get_stream, args=(stream_userid,)).start()
-			# TODO Start the view.exe process with stream_userid
-			subprocess.call(["C:\\Windows\\teacherhelper_view_x64.exe", stream_userid])
-		elif req == 'stopstream':
-			# TODO Stop the streaming
-			pass
-		elif req == 'nojobs':
-			log('no jobs for me!')
+				elif req.startswith('stream'):
+					stream_userid = req.split(';')[1]
+					threading.Thread(target=get_stream, args=(stream_userid,)).start()
+					# TODO Start the view.exe process with stream_userid
+					subprocess.call(["C:\\Windows\\teacherhelper_view_x64.exe", stream_userid])
+				elif req == 'stopstream':
+					# TODO Stop the streaming
+					pass
+				elif req == 'nojobs':
+					log('no jobs for me!')
+		except Exception:
+			log('Disconnected from server, restart')
+			continue
+	
 
 if __name__ == '__main__':
 	main()

@@ -78,9 +78,14 @@ def snap_handler(userid):
 	print datetime.datetime.now().isoformat()
 
 
+def setup_folders():
+	# Checks if any required folder does not exist
+	os.makedirs(IMAGE_SAVE_PATH, exist_ok=True)
+	os.makedirs(IMAGE_SAVE_PATH + "\\temp", exist_ok=True)
 
 def main():
 	# TODO Allow killing
+	setup_folders()
 	snap_handler(0)
 
 if __name__ == '__main__':

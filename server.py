@@ -301,11 +301,17 @@ def handle_client(client_sock, addr, userid):
 
 		
 
+def setup_folders():
+	# Checks if any required folder does not exist
+	os.makedirs(IMAGE_SAVE_PATH, exist_ok=True)
+	os.makedirs(IMAGE_SAVE_PATH + "\\temp", exist_ok=True)
+
 # TODO Server should clear snapshot history for other days
 def main():
 	"""
 	Main function
 	"""
+	setup_folders()
 	client_list = []
 
 	log('Welcome to the server!')
