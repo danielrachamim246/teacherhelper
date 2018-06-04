@@ -11,6 +11,7 @@ import struct
 import win32api
 import ctypes
 import subprocess
+import shutil
 
 MAX_CLIENTS=5
 mydict = {}
@@ -46,6 +47,7 @@ def delete_history_snaps():
 				# TODO REALLY DELETE
 				delpath = "{0}\\{1}\\{2}".format(IMAGE_SAVE_PATH, userdir, datedir)
 				print 'delete! ' + delpath
+				shutil.rmtree(delpath)
 
 
 def teacher_put_cmd(teacher_cmd, client_cmd):
@@ -251,12 +253,12 @@ def handle_snap_server_sock(client):
 				# Folder exists
 				pass
 
-			log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
-			log('Expecting {0} bytes of data'.format(encoded_len))
+			#log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
+			#log('Expecting {0} bytes of data'.format(encoded_len))
 			got_encoded = ""
 			while len(got_encoded) != encoded_len:
 				data = client.recv(300000)
-				log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
+				#log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
 				if not data:
 					log('breaking encoded')
 					break

@@ -22,7 +22,7 @@ killSnap = 0
 killLock = 0
 killStream = 0
 DEBUG = 1
-SERVER_IP = "192.168.1.102"
+SERVER_IP = "192.168.1.101"
 IMAGE_SAVE_PATH = "C:\\Users\\" + getpass.getuser() + "\\snapshots"
 
 
@@ -55,10 +55,10 @@ def get_stream(userid):
 		if killStream:
 			log('killStream, breaking')
 			return
-		log('Waiting for data')
+		#log('Waiting for data')
 		data = s.recv(300000)
 		s.send("okheader")
-		log('Got data')
+		#log('Got data')
 		if not data:
 			log('breaking')
 			break
@@ -81,20 +81,20 @@ def get_stream(userid):
 			# Folder exists
 			pass
 
-		log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
-		log('Expecting {0} bytes of data'.format(encoded_len))
+		#log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
+		#log('Expecting {0} bytes of data'.format(encoded_len))
 		got_encoded = ""
 		while len(got_encoded) < encoded_len:
 			data = s.recv(300000)
-			log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
+			#log('Got encoded data, len={0}, max={1}'.format(len(data), encoded_len))
 			if not data:
 				log('breaking encoded')
 				break
 			got_encoded += data
-			log("now we have {0} from {1}".format(len(got_encoded), encoded_len))
+			#log("now we have {0} from {1}".format(len(got_encoded), encoded_len))
 
 		fname = "{0}.jpg".format(snapid)
-		log("writing file {0}".format(fname))
+		log("writing file {0}".format(fname)0)
 		f = open(os.path.join(folder_path, fname), 'ab')
 		f.write(base64.b64decode(got_encoded))
 		f.close()
@@ -153,7 +153,10 @@ def snap_handler(userid):
 
 		# finish, remove the file
 		f.close()
-		os.remove(save_path)
+		try:
+			os.remove(save_path)
+		except Exception:
+			pass
 
 		# Check for new variables for the next file
 		image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
@@ -178,7 +181,7 @@ def main():
 	log("[*] Trying to sync the clock")
 	subprocess.call(["python", "set_ntp.py"])
 	setup_folders()
-	
+
 	userid = random.randint(1,10001)
 	log('userid ' + str(userid))
 	while True:
@@ -206,19 +209,16 @@ def main():
 				elif req == 'stopsnap':
 					killSnap = 1
 				elif req == 'stopstream':
+					log("stopstream")
 					killStream = 1
 					os.system("taskkill /f /im teacherhelper_view.exe")
 					os.system("taskkill /f /im teacherhelper_view_x64.exe")
-
 				elif req.startswith('stream'):
 					killStream = 0
 					stream_userid = req.split(';')[1]
 					threading.Thread(target=get_stream, args=(stream_userid,)).start()
 					# TODO Start the view.exe process with stream_userid
 					subprocess.call(["C:\\Windows\\teacherhelper_view_x64.exe", stream_userid])
-				elif req == 'stopstream':
-					# TODO Stop the streaming
-					pass
 				elif req == 'nojobs':
 					log('no jobs for me!')
 		except Exception:
