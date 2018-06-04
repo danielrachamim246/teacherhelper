@@ -17,6 +17,7 @@ global userid
 killSnap = 0
 killLock = 0
 DEBUG = 1
+IMAGE_SAVE_PATH = "C:\\Users\\" + getpass.getuser() + "\\snapshots"
 
 def log(msg):
 	if DEBUG:

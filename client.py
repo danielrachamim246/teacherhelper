@@ -11,15 +11,20 @@ import threading
 import datetime
 import subprocess
 import getpass
+import struct
+import win32api
+
 
 global userid
 
 
 killSnap = 0
 killLock = 0
+killStream = 0
 DEBUG = 1
 SERVER_IP = "192.168.1.102"
 IMAGE_SAVE_PATH = "C:\\Users\\" + getpass.getuser() + "\\snapshots"
+
 
 def log(msg):
 	if DEBUG:
@@ -169,7 +174,11 @@ def main():
 	global killLock
 	global killSnap
 	global killStream
+
+	log("[*] Trying to sync the clock")
+	subprocess.call(["python", "set_ntp.py"])
 	setup_folders()
+	
 	userid = random.randint(1,10001)
 	log('userid ' + str(userid))
 	while True:
@@ -202,6 +211,7 @@ def main():
 					os.system("taskkill /f /im teacherhelper_view_x64.exe")
 
 				elif req.startswith('stream'):
+					killStream = 0
 					stream_userid = req.split(';')[1]
 					threading.Thread(target=get_stream, args=(stream_userid,)).start()
 					# TODO Start the view.exe process with stream_userid
