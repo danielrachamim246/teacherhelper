@@ -303,8 +303,10 @@ def handle_client(client_sock, addr, userid):
 
 def setup_folders():
 	# Checks if any required folder does not exist
-	os.makedirs(IMAGE_SAVE_PATH, exist_ok=True)
-	os.makedirs(IMAGE_SAVE_PATH + "\\temp", exist_ok=True)
+	if not os.path.exists(IMAGE_SAVE_PATH):
+		os.makedirs(IMAGE_SAVE_PATH)
+	if not os.path.exists(IMAGE_SAVE_PATH + "\\temp"):
+		os.makedirs(IMAGE_SAVE_PATH + "\\temp")
 
 # TODO Server should clear snapshot history for other days
 def main():
