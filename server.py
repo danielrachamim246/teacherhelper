@@ -48,6 +48,7 @@ def delete_history_snaps():
 				delpath = "{0}\\{1}\\{2}".format(IMAGE_SAVE_PATH, userdir, datedir)
 				print 'delete! ' + delpath
 				shutil.rmtree(delpath)
+				print 'deleted'
 
 
 def teacher_put_cmd(teacher_cmd, client_cmd):
