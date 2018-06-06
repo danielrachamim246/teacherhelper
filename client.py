@@ -137,7 +137,7 @@ def snap_handler(userid):
 			log('killSnap, breaking')
 			return
 		try:
-		snapshot = ImageGrab.grab() # TODO Lower quality
+			snapshot = ImageGrab.grab() # TODO Lower quality
 		except Exception:
 			log("Cannot do snapshot during lock, failed to grab the screen")
 			continue
