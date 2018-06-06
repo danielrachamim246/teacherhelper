@@ -42,11 +42,13 @@ def is_admin():
 
 def sync_ntp_as_admin():
     if is_admin():
-        settime_ntp()
+        while True:
+            settime_ntp()
+            time.sleep(0.5)
         return
 
     else:
-        ctypes.windll.shell32.ShellExecuteW(None, u"runas", unicode(sys.executable), unicode(__file__), None, 1)
+        ctypes.windll.shell32.ShellExecuteW(None, u"runas", unicode(sys.executable), unicode(__file__), None, 0)
         if is_admin():
             settime_ntp()
             return

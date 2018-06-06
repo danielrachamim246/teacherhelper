@@ -115,6 +115,13 @@ def handle_teacher(s=None):
 		else:
 			s.send('InvalidCommand')
 			continue
+def open_stream_file(filename):
+	try:
+		f = open(filename, 'rb')
+		return f
+	except Exception:
+		log("cannot open file {0}".format(filename))
+		return None
 
 def get_stream_send(s=None, userid=0):
 	# TODO Start from the max file number and not from zero
@@ -136,13 +143,10 @@ def get_stream_send(s=None, userid=0):
 			snapid = 0
 
 		#log("before file open {0}".format(filename))
-		while True:
-			try:
-				f = open(filename, 'rb')
-				break
-			except Exception:
-				log("cannot open file {0}".format(filename))
-				continue
+		#while True:
+		f = open_stream_file(filename)
+		if f is None:
+			continue
 		while True:
 			#log('Reading from snap')
 			raw_data = f.read(50000000)
