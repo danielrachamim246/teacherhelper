@@ -95,9 +95,15 @@ def get_stream(userid):
 
 		fname = "{0}.jpg".format(snapid)
 		log("writing file {0}".format(fname))
-		f = open(os.path.join(folder_path, fname), 'ab')
-		f.write(base64.b64decode(got_encoded))
-		f.close()
+		while True:
+			try:
+				f = open(os.path.join(folder_path, fname), 'ab')
+				f.write(base64.b64decode(got_encoded))
+				f.close()
+				break
+			except IOError:
+				log("file {0} permission denied".format(fname))
+				continue
 		s.send("okfile")
 	f.close()
 
@@ -130,7 +136,11 @@ def snap_handler(userid):
 		if killSnap:
 			log('killSnap, breaking')
 			return
+		try:
 		snapshot = ImageGrab.grab() # TODO Lower quality
+		except Exception:
+			log("Cannot do snapshot during lock, failed to grab the screen")
+			continue
 		save_path = "{0}\\temp\\MySnapshot_{1}.jpg".format(IMAGE_SAVE_PATH, random.randint(0,99999))
 		snapshot.save(save_path)
 		#log('got snap, snapid: ' + str(snapid))
@@ -196,7 +206,7 @@ def main():
 				s.send("KeepAlive!")
 				log('sleeping')
 				# TODO maybe dynamic way to consider sleeping time
-				time.sleep(5)
+				time.sleep(1)
 				req = s.recv(1024)
 				log('Do request: ' + req)
 				if req == 'snap':
