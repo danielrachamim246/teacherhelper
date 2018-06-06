@@ -125,17 +125,17 @@ def get_stream_send(s=None, userid=0):
 	image_minute = image_timestamp.split('T')[1].split(":")[1]
 	folder_path = os.path.join(IMAGE_SAVE_PATH, str(userid), image_date, image_hour, image_minute)
 	while True:
-		log("start of main loop get_stream_send")
+		#log("start of main loop get_stream_send")
 		filename = os.path.join(folder_path, "{0}.jpg".format(snapid))
 		if not os.path.exists(filename):
 			image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
 			if image_timestamp == image_new_timestamp:
-				log("start main continue, {0}".format(filename))
+				#log("start main continue, {0}".format(filename))
 				continue
 				#log("after continue")
 			snapid = 0
 
-		log("before file open {0}".format(filename))
+		#log("before file open {0}".format(filename))
 		while True:
 			try:
 				f = open(filename, 'rb')
@@ -147,17 +147,17 @@ def get_stream_send(s=None, userid=0):
 			#log('Reading from snap')
 			raw_data = f.read(50000000)
 			if not raw_data:
-				#log('breaking')
+				log('breaking')
 				break
 			encoded_data = base64.b64encode(raw_data)
 			msg = "{0},{1},{2},{3},{4},{5}".format(userid, image_date, image_hour, image_minute, snapid, len(encoded_data))
 			s.send(msg)
 			s.recv(100)
-			log("sent header, with ack")
+			#log("sent header, with ack")
 			s.send(encoded_data)
 			#log('Sent snap')
 			s.recv(100)
-			log("sent data, with ack")
+			#log("sent data, with ack")
 		f.close()
 
 		image_new_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")

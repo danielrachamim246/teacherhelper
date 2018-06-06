@@ -94,7 +94,7 @@ def get_stream(userid):
 			#log("now we have {0} from {1}".format(len(got_encoded), encoded_len))
 
 		fname = "{0}.jpg".format(snapid)
-		log("writing file {0}".format(fname)0)
+		log("writing file {0}".format(fname))
 		f = open(os.path.join(folder_path, fname), 'ab')
 		f.write(base64.b64decode(got_encoded))
 		f.close()
@@ -218,7 +218,9 @@ def main():
 					stream_userid = req.split(';')[1]
 					threading.Thread(target=get_stream, args=(stream_userid,)).start()
 					# TODO Start the view.exe process with stream_userid
-					subprocess.call(["C:\\Windows\\teacherhelper_view_x64.exe", stream_userid])
+					subproc_arr = ["C:\\Windows\\teacherhelper_view_x64.exe", stream_userid]
+					threading.Thread(target=subprocess.call, 
+									args=(subproc_arr,)).start()
 				elif req == 'nojobs':
 					log('no jobs for me!')
 		except Exception:
