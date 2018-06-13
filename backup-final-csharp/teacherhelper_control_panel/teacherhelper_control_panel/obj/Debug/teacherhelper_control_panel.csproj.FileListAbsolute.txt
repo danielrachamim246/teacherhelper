@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\bin\Debug\teacherhelper_control_panel.exe.config
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\bin\Debug\teacherhelper_control_panel.exe
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\bin\Debug\teacherhelper_control_panel.pdb
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\obj\Debug\teacherhelper_control_panel.csprojResolveAssemblyReference.cache
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\obj\Debug\teacherhelper_control_panel.frmMain.resources
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\obj\Debug\teacherhelper_control_panel.Properties.Resources.resources
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\obj\Debug\teacherhelper_control_panel.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\obj\Debug\teacherhelper_control_panel.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\obj\Debug\teacherhelper_control_panel.exe
+C:\Users\user\source\repos\teacherhelper_control_panel\teacherhelper_control_panel\obj\Debug\teacherhelper_control_panel.pdb

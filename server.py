@@ -124,7 +124,6 @@ def open_stream_file(filename):
 		return None
 
 def get_stream_send(s=None, userid=0):
-	# TODO Start from the max file number and not from zero
 	snapid = 0
 	image_timestamp = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M")
 	image_date = image_timestamp.split('T')[0]
@@ -208,7 +207,6 @@ def handle_get_stream_server():
 def handle_mgmt_server():
 	# Listens of 8003
 	# Handles requests 
-	# TODO how to share commands between the clients server and the mgmt server
 	
 	s = listen(port=8003)
 	while True:
@@ -257,7 +255,6 @@ def handle_snap_server_sock(client):
 			except OSError:
 				# Folder exists
 				pass
-
 			#log('From userid: {0}, and snapid: {1}'.format(userid, snapid))
 			#log('Expecting {0} bytes of data'.format(encoded_len))
 			got_encoded = ""
@@ -302,25 +299,24 @@ def handle_client(client_sock, addr, userid):
 	while True:
 		try:
 			req = client_sock.recv(9999999)
+
+			log('[*] Client {0}:{1} requests {2}'.format(addr[0], addr[1], req))
+			# Get a job and send
+			try:
+				job = mydict[userid].get(True, 1)
+			except Queue.Empty:
+				client_sock.send('nojobs')
+				continue
+
+			if job is not None:
+				# we have a job
+				client_sock.send(job)
+			else:
+				client_sock.send('nojobs')
 		except Exception:
 			del mydict[userid]
 			log("client {0} disconnected!".format(userid))
 			return
-
-		log('[*] Client {0}:{1} requests {2}'.format(addr[0], addr[1], req))
-		# Get a job and send
-		try:
-			job = mydict[userid].get(True, 1)
-		except Queue.Empty:
-			client_sock.send('nojobs')
-			continue
-
-		if job is not None:
-			# we have a job
-			client_sock.send(job)
-		else:
-			client_sock.send('nojobs')
-
 		
 
 def setup_folders():

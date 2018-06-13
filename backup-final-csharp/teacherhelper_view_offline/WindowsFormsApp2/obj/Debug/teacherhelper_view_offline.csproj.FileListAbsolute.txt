@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\obj\Debug\testing_Photo.Form1.resources
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\obj\Debug\teacherhelper_view_offline.csproj.GenerateResource.Cache
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\obj\Debug\teacherhelper_view_offline.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\user\source\repos\teacherhelper_view_offline\WindowsFormsApp2\obj\Debug\teacherhelper_view_offline.csprojResolveAssemblyReference.cache

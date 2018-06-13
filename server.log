@@ -1,0 +1,3174 @@
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+New client from 192.168.1.106:52882, userid=3818
+[*] New Thread for 192.168.1.106:52882!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+New client from 192.168.1.107:49723, userid=3792
+[*] New Thread for 192.168.1.107:49723!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+MGMT | New Connection
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+MGMT | Teacher | received getClient
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+MGMT | Teacher | received requestStreamClient,3792
+MGMT | Teacher | received requestStreamClient,3818
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+SNAP | Accepted Connection
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+SNAP | Waiting for Another Connection
+SNAP | Accepted Connection
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+SNAP | Waiting for Another Connection
+MGMT | Teacher | received getLiveStreamClient,3792;3818
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+GET_STREAM | New Connection
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+GET_STREAM | Handler | userid=3818
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+breaking
+ 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+ 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+MGMT | Teacher | received stopLiveStreamClient,3792
+MGMT | Teacher | received stopLiveStreamClient,3818
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+stream disconnected from 3818
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+MGMT | Teacher | received lockClient,3792
+MGMT | Teacher | received lockClient,3818
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+MGMT | Teacher | received unlockClient,3792
+MGMT | Teacher | received unlockClient,3818
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+MGMT | Teacher | received requestStreamClient,3792
+MGMT | Teacher | received requestStreamClient,3818
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+SNAP | Accepted Connection
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+SNAP | Waiting for Another Connection
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+MGMT | Teacher | received getLiveStreamClient,3792;0
+MGMT | Teacher | received getLiveStreamClient,3818;0
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+GET_STREAM | New Connection
+GET_STREAM | Handler | userid=0
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+GET_STREAM | New Connection
+GET_STREAM | Handler | userid=0
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+MGMT | Teacher | received stopLiveStreamClient,3792
+MGMT | Teacher | received stopLiveStreamClient,3818
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+stream disconnected from 0
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+stream disconnected from 0
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+MGMT | Teacher | received getLiveStreamClient,3792;0
+MGMT | Teacher | received getLiveStreamClient,3818;0
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+GET_STREAM | Handler | userid=0
+breaking
+breaking
+GET_STREAM | New Connection
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+GET_STREAM | Handler | userid=0
+breaking
+breaking
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+stream disconnected from 0
+[*] Client 192.168.1.107:49723 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Client 192.168.1.106:52882 requests KeepAlive!
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+New client from 192.168.1.106:53005, userid=903
+[*] New Thread for 192.168.1.106:53005!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+New client from 192.168.1.107:49795, userid=5123
+[*] New Thread for 192.168.1.107:49795!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+MGMT | New Connection
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+MGMT | Teacher | received getClient
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+MGMT | Teacher | received requestStreamClient,5123
+MGMT | Teacher | received requestStreamClient,903
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+MGMT | Teacher | received getLiveStreamClient,5123;0
+MGMT | Teacher | received getLiveStreamClient,903;0
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+GET_STREAM | New Connection
+GET_STREAM | Handler | userid=0
+breaking
+breaking
+breaking
+breaking
+GET_STREAM | New Connection
+GET_STREAM | Handler | userid=0
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+ 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+ 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+MGMT | Teacher | received stopLiveStreamClient,5123
+breaking
+MGMT | Teacher | received stopLiveStreamClient,903
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+stream disconnected from 0
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+stream disconnected from 0
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+MGMT | Teacher | received getLiveStreamClient,903;5123
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+GET_STREAM | New Connection
+GET_STREAM | Handler | userid=5123
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+ 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+ 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+breaking
+MGMT | Teacher | received stopLiveStreamClient,5123
+MGMT | Teacher | received stopLiveStreamClient,903
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+breaking
+breaking
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+stream disconnected from 5123
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+MGMT | Teacher | received lockClient,5123
+MGMT | Teacher | received lockClient,903
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+MGMT | Teacher | received unlockClient,5123
+MGMT | Teacher | received unlockClient,903
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Client 192.168.1.107:49795 requests KeepAlive!
+[*] Client 192.168.1.106:53005 requests KeepAlive!
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+New client from 192.168.1.108:54988, userid=1007
+[*] New Thread for 192.168.1.108:54988!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+MGMT | New Connection
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+MGMT | Teacher | received getClient
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+MGMT | Teacher | received lockClient,1007
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+MGMT | Teacher | received unlockClient,1007
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+MGMT | Teacher | received requestStreamClient,1007
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+MGMT | Teacher | received getLiveStreamClient,1007;0
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+GET_STREAM | New Connection
+GET_STREAM | Handler | userid=0
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+breaking
+breaking
+breaking
+breaking
+breaking
+breaking
+MGMT | Teacher | received stopLiveStreamClient,1007
+breaking
+breaking
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+stream disconnected from 0
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+[*] Client 192.168.1.108:54988 requests KeepAlive!
+MGMT | Teacher | received getClient
+MGMT | Teacher | received getClient
+MGMT | Teacher | received getClient
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+MGMT | New Connection
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+MGMT | New Connection
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+MGMT | New Connection
+MGMT | New Connection
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+MGMT | New Connection
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+MGMT | New Connection
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
+[*] Trying to sync the clock
+Welcome to the server!
+[*] Listening...
+SNAP | Listening...
+SNAP | Waiting for Another Connection
+MGMT | New Connection
+SNAP | Accepted Connection
+SNAP | Waiting for Another Connection
